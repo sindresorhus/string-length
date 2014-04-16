@@ -1,0 +1,36 @@
+{
+  "name": "string-length",
+  "version": "0.0.0",
+  "description": "Get the real length of a string by correctly counting astral symbols",
+  "license": "MIT",
+  "repository": "sindresorhus/string-length",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "browser": "browserify -s $npm_package_name -o browser.js ."
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "unicode",
+    "string",
+    "str",
+    "length",
+    "astral",
+    "symbol",
+    "surrogates",
+    "codepoints"
+  ],
+  "devDependencies": {
+    "mocha": "*",
+    "browserify": "^3.0.0"
+  }
+}
