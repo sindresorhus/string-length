@@ -1,9 +1,9 @@
 {
 	"name": "string-length",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Get the real length of a string by correctly counting astral symbols",
 	"license": "MIT",
-	"repo": "sindresorhus/string-length",
+	"repository": "sindresorhus/string-length",
 	"scripts": [
 		"index.js"
 	],
