@@ -1,6 +1,6 @@
 {
   "name": "string-length",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes",
   "license": "MIT",
   "repository": "sindresorhus/string-length",
