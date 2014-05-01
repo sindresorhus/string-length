@@ -1,7 +1,7 @@
 {
   "name": "string-length",
   "version": "0.1.1",
-  "description": "Get the real length of a string by correctly counting astral symbols",
+  "description": "Get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes",
   "license": "MIT",
   "repository": "sindresorhus/string-length",
   "author": {
@@ -27,8 +27,14 @@
     "astral",
     "symbol",
     "surrogates",
-    "codepoints"
+    "codepoints",
+    "ansi",
+    "escape",
+    "codes"
   ],
+  "dependencies": {
+    "strip-ansi": "^0.2.1"
+  },
   "devDependencies": {
     "mocha": "*",
     "browserify": "^3.0.0"

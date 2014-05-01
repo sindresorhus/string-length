@@ -1,6 +1,6 @@
 {
 	"name": "string-length",
-	"description": "Get the real length of a string by correctly counting astral symbols",
+	"description": "Get the real length of a string - by correctly counting astral symbols and ignoring ansi escape codes",
 	"license": "MIT",
 	"main": "browser.js",
 	"authors": [
@@ -18,7 +18,10 @@
 		"astral",
 		"symbol",
 		"surrogates",
-		"codepoints"
+		"codepoints",
+		"ansi",
+		"escape",
+		"codes"
 	],
 	"ignore": [
 		"**/.*",
