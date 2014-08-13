@@ -1,6 +1,6 @@
 'use strict';
 var assert = require('assert');
-var stringLength = require('./index');
+var stringLength = require('./');
 
 it('should get the real length of a string', function () {
 	assert.strictEqual(stringLength('𠀔'), 1);
