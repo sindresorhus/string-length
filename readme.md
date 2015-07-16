@@ -26,6 +26,11 @@ stringLength('\u001b[1municorn\u001b[22m');
 ```
 
 
+## Related
+
+- [string-width](https://github.com/sindresorhus/string-width) - Get visual width of a string
+
+
 ## License
 
 MIT © [Sindre Sorhus](http://sindresorhus.com)
