@@ -7,7 +7,7 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -32,7 +32,7 @@
     "codes"
   ],
   "dependencies": {
-    "strip-ansi": "^2.0.0"
+    "strip-ansi": "^3.0.0"
   },
   "devDependencies": {
     "mocha": "*"
