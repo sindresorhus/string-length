@@ -1,7 +1,7 @@
 import test from 'ava';
 import stringLength from '../';
 
-test('should get the real length of a string', t => {
+test('get the real length of a string', t => {
 	t.is(stringLength('𠀔'), 1);
 	t.is(stringLength('foo𠁐bar𠀃'), 8);
 	t.is(stringLength('あ'), 1);
