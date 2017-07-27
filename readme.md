@@ -8,20 +8,22 @@
 ## Install
 
 ```
-$ npm install --save string-length
+$ npm install string-length
 ```
 
 
 ## Usage
 
 ```js
+const stringLength = require('string-length');
+
 '🐴'.length;
 //=> 2
 
 stringLength('🐴');
 //=> 1
 
-stringLength('\u001b[1municorn\u001b[22m');
+stringLength('\u001B[1municorn\u001B[22m');
 //=> 7
 ```
 
@@ -33,4 +35,4 @@ stringLength('\u001b[1municorn\u001b[22m');
 
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
