@@ -30,6 +30,7 @@ stringLength('\u001B[1municorn\u001B[22m');
 
 ## Related
 
+- [string-length-cli](https://github.com/LitoMore/string-length-cli) - CLI for this module
 - [string-width](https://github.com/sindresorhus/string-width) - Get visual width of a string
 
 
