@@ -34,6 +34,14 @@ stringLength('\u001B[1municorn\u001B[22m');
 - [string-width](https://github.com/sindresorhus/string-width) - Get visual width of a string
 
 
-## License
+---
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-string-length?utm_source=npm-string-length&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
