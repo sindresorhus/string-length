@@ -9,4 +9,6 @@ test('get the real length of a string', t => {
 	t.is(stringLength('🐴'), 1);
 	t.is(stringLength('𝌆'), 1);
 	t.is(stringLength('\u001B[1mfoo\u001B[22m'), 3);
+	t.is(stringLength('❤️'), 1);
+	t.is(stringLength('👊🏽'), 1);
 });
