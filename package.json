@@ -34,13 +34,12 @@
 		"codes"
 	],
 	"dependencies": {
-		"astral-regex": "^1.0.0",
 		"char-regex": "^1.0.1",
-		"strip-ansi": "^5.2.0"
+		"strip-ansi": "^6.0.0"
 	},
 	"devDependencies": {
-		"ava": "^1.4.1",
-		"tsd": "^0.7.1",
-		"xo": "^0.24.0"
+		"ava": "^3.1.0",
+		"tsd": "^0.11.0",
+		"xo": "^0.25.3"
 	}
 }

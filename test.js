@@ -1,5 +1,5 @@
-import test from 'ava';
-import stringLength from '.';
+const test = require('ava');
+const stringLength = require('.');
 
 test('get the real length of a string', t => {
 	t.is(stringLength('𠀔'), 1);
