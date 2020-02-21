@@ -4,13 +4,11 @@
 
 `String#length` errornously counts [astral symbols](https://web.archive.org/web/20150721114550/http://www.tlg.uci.edu/~opoudjis/unicode/unicode_astral.html) as two characters.
 
-
 ## Install
 
 ```
 $ npm install string-length
 ```
-
 
 ## Usage
 
@@ -27,12 +25,10 @@ stringLength('\u001B[1municorn\u001B[22m');
 //=> 7
 ```
 
-
 ## Related
 
 - [string-length-cli](https://github.com/LitoMore/string-length-cli) - CLI for this module
 - [string-width](https://github.com/sindresorhus/string-width) - Get visual width of a string
-
 
 ---
 
