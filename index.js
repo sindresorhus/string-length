@@ -6,7 +6,8 @@ const stringLength = string => {
 	if (string === '') {
 		return 0;
 	}
-	return stripAnsi(string).match(charRegex()).length
+
+	return stripAnsi(string).match(charRegex()).length;
 };
 
 module.exports = stringLength;
