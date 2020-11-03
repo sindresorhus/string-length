@@ -15,3 +15,9 @@ test('get the real length of a string', t => {
 	t.is(stringLength('🏴󠁧󠁢󠁥󠁮󠁧󠁿❤️谢👪'), 4);
 	t.is(stringLength('\u001B[1m👩‍👧‍👦°✿\u001B[22m'), 3);
 });
+
+test('respect the countEscapeCodes option and defaults', t => {
+	t.is(stringLength('\u001B[1mtest'), 4);
+	t.is(stringLength('\u001B[1mtest', {countEscapeCodes: false}), 4);
+	t.is(stringLength('\u001B[1mtest', {countEscapeCodes: true}), 8);
+});

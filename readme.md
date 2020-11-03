@@ -1,6 +1,6 @@
 # string-length [![Build Status](https://travis-ci.org/sindresorhus/string-length.svg?branch=master)](https://travis-ci.org/sindresorhus/string-length)
 
-> Get the real length of a string - by correctly counting astral symbols and ignoring [ansi escape codes](https://github.com/sindresorhus/strip-ansi)
+> Get the real length of a string - by correctly counting astral symbols and optionally ignoring [ansi escape codes](https://github.com/sindresorhus/strip-ansi)
 
 `String#length` erroneously counts [astral symbols](https://web.archive.org/web/20150721114550/http://www.tlg.uci.edu/~opoudjis/unicode/unicode_astral.html) as two characters.
 
@@ -23,7 +23,33 @@ stringLength('🐴');
 
 stringLength('\u001B[1municorn\u001B[22m');
 //=> 7
+
+stringLength('\u001B[1municorn\u001B[22m', { countEscapeCodes: true });
+//=> 16
 ```
+
+You should only ignore escape codes when working with terminal-related strings; otherwise, you should enable `countEscapeCodes` (which defaults to `false`). This default will change in a future breaking release.
+
+## API
+
+### stringLength(string, options?)
+
+#### string
+
+Type: `string`
+
+The string to count the length of.
+
+#### options
+
+Type: `object`
+
+##### countEscapeCodes
+
+Type: `boolean`\
+Default: `false`
+
+Whether to include ANSI escape codes in the character count, or skip them.
 
 ## Related
 
