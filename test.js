@@ -3,6 +3,7 @@ const stringLength = require('.');
 
 test('get the real length of a string', t => {
 	t.is(stringLength(''), 0);
+	t.is(stringLength('\u001B[1m\u001B[22m'), 0);
 	t.is(stringLength('𠀔'), 1);
 	t.is(stringLength('foo𠁐bar𠀃'), 8);
 	t.is(stringLength('あ'), 1);
