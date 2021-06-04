@@ -1,19 +1,18 @@
-'use strict';
-const stripAnsi = require('strip-ansi');
-const charRegex = require('char-regex');
+import stripAnsi from 'strip-ansi';
+import charRegex from 'char-regex';
 
-const stringLength = string => {
+export default function stringLength(string, {countAnsiEscapeCodes = false} = {}) {
 	if (string === '') {
 		return 0;
 	}
 
-	const strippedString = stripAnsi(string);
+	if (!countAnsiEscapeCodes) {
+		string = stripAnsi(string);
+	}
 
-	if (strippedString === '') {
+	if (string === '') {
 		return 0;
 	}
 
-	return strippedString.match(charRegex()).length;
-};
-
-module.exports = stringLength;
+	return string.match(charRegex()).length;
+}
