@@ -1,5 +1,5 @@
-import test from 'ava'
-import stringLength from './index.js'
+import test from 'ava';
+import stringLength from './index.js';
 
 test('get the real length of a string', t => {
 	t.is(stringLength(''), 0);

@@ -1,10 +1,10 @@
 export interface Options {
 	/**
-	Whether ansi escape codes should be counted. By default they are ignored.
+	Whether [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) should be counted. They are ignored by default.
 
 	@default false
 	*/
-	countAnsiEscapeCodes?: boolean
+	readonly countAnsiEscapeCodes?: boolean;
 }
 
 /**
