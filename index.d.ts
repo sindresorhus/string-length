@@ -1,3 +1,12 @@
+export interface Options {
+	/**
+	Whether [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) should be counted. They are ignored by default.
+
+	@default false
+	*/
+	readonly countAnsiEscapeCodes?: boolean;
+}
+
 /**
 Get the real length of a string - by correctly counting astral symbols and ignoring [ansi escape codes](https://github.com/sindresorhus/strip-ansi).
 
@@ -5,7 +14,7 @@ Get the real length of a string - by correctly counting astral symbols and ignor
 
 @example
 ```
-import stringLength = require('string-length');
+import stringLength from 'string-length';
 
 '🐴'.length;
 //=> 2
@@ -17,6 +26,4 @@ stringLength('\u001B[1municorn\u001B[22m');
 //=> 7
 ```
 */
-declare function stringLength(string: string): number;
-
-export = stringLength;
+export default function stringLength(string: string, options?: Options): number;

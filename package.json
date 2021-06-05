@@ -10,8 +10,10 @@
 		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=10"
+		"node": ">=12.20"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"scripts": {
 		"test": "xo && ava && tsd"
 	},
@@ -34,12 +36,12 @@
 		"codes"
 	],
 	"dependencies": {
-		"char-regex": "^1.0.2",
+		"char-regex": "^2.0.0",
 		"strip-ansi": "^6.0.0"
 	},
 	"devDependencies": {
-		"ava": "^3.1.0",
-		"tsd": "^0.11.0",
-		"xo": "^0.25.3"
+		"ava": "^3.15.0",
+		"tsd": "^0.17.0",
+		"xo": "^0.40.2"
 	}
 }

@@ -13,7 +13,7 @@ $ npm install string-length
 ## Usage
 
 ```js
-const stringLength = require('string-length');
+import stringLength from 'string-length';
 
 '🐴'.length;
 //=> 2
@@ -24,6 +24,21 @@ stringLength('🐴');
 stringLength('\u001B[1municorn\u001B[22m');
 //=> 7
 ```
+
+## API
+
+### stringLength(string, options?)
+
+#### options
+
+Type: `object`
+
+##### countAnsiEscapeCodes
+
+Type: `boolean`\
+Default: `false`
+
+Whether [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) should be counted. They are ignored by default.
 
 ## Related
 
