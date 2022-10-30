@@ -1,6 +1,6 @@
 import stripAnsi from 'strip-ansi';
 
-const segmenter = Intl.Segmenter();
+const segmenter = new Intl.Segmenter();
 
 export default function stringLength(string, {countAnsiEscapeCodes = false} = {}) {
 	if (string === '') {
@@ -17,7 +17,7 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 
 	let length = 0;
 
-	for (const _ of segmenter.segment(string)) {
+	for (const _ of segmenter.segment(string)) { // eslint-disable-line no-unused-vars
 		length++;
 	}
 
