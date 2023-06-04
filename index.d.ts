@@ -1,11 +1,11 @@
-export interface Options {
+export type Options = {
 	/**
 	Whether [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) should be counted. They are ignored by default.
 
 	@default false
 	*/
 	readonly countAnsiEscapeCodes?: boolean;
-}
+};
 
 /**
 Get the real length of a string - by correctly counting astral symbols and ignoring [ansi escape codes](https://github.com/sindresorhus/strip-ansi).

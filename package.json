@@ -37,11 +37,11 @@
 		"codes"
 	],
 	"dependencies": {
-		"strip-ansi": "^7.0.1"
+		"strip-ansi": "^7.1.0"
 	},
 	"devDependencies": {
-		"ava": "^3.15.0",
-		"tsd": "^0.17.0",
-		"xo": "^0.44.0"
+		"ava": "^5.3.0",
+		"tsd": "^0.28.1",
+		"xo": "^0.54.2"
 	}
 }

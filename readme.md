@@ -6,8 +6,8 @@
 
 ## Install
 
-```
-$ npm install string-length
+```sh
+npm install string-length
 ```
 
 ## Usage
@@ -44,15 +44,3 @@ Whether [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code) shou
 
 - [string-length-cli](https://github.com/LitoMore/string-length-cli) - CLI for this module
 - [string-width](https://github.com/sindresorhus/string-width) - Get visual width of a string
-
----
-
-<div align="center">
-	<b>
-		<a href="https://tidelift.com/subscription/pkg/npm-string-length?utm_source=npm-string-length&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
-	</b>
-	<br>
-	<sub>
-		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
-	</sub>
-</div>
