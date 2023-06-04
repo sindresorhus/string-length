@@ -1,5 +1,6 @@
 import stripAnsi from 'strip-ansi';
-import charRegex from 'char-regex';
+
+const segmenter = new Intl.Segmenter();
 
 export default function stringLength(string, {countAnsiEscapeCodes = false} = {}) {
 	if (string === '') {
@@ -14,5 +15,11 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 		return 0;
 	}
 
-	return string.match(charRegex()).length;
+	let length = 0;
+
+	for (const _ of segmenter.segment(string)) { // eslint-disable-line no-unused-vars
+		length++;
+	}
+
+	return length;
 }
