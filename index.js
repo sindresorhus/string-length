@@ -9,10 +9,10 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 
 	if (!countAnsiEscapeCodes) {
 		string = stripAnsi(string);
-	}
 
-	if (string === '') {
-		return 0;
+		if (string === '') {
+			return 0;
+		}
 	}
 
 	let length = 0;
