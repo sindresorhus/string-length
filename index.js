@@ -15,7 +15,7 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 		}
 	}
 
-	string = string.replace(/\u200b/g, '');
+	string = string.replace(/\u200B/g, '');
 
 	let length = 0;
 
