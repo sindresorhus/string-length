@@ -15,6 +15,8 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 		}
 	}
 
+	string = string.replace(/\u200b/g, '');
+
 	let length = 0;
 
 	for (const _ of segmenter.segment(string)) { // eslint-disable-line no-unused-vars
