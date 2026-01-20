@@ -1,4 +1,4 @@
-import stripAnsi from 'strip-ansi';
+import {stripVTControlCharacters} from 'node:util';
 
 const segmenter = new Intl.Segmenter();
 
@@ -8,7 +8,7 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 	}
 
 	if (!countAnsiEscapeCodes) {
-		string = stripAnsi(string);
+		string = stripVTControlCharacters(string);
 
 		if (string === '') {
 			return 0;
