@@ -11,7 +11,7 @@
 		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=16"
+		"node": ">=16.11"
 	},
 	"type": "module",
 	"exports": "./index.js",
@@ -36,9 +36,6 @@
 		"escape",
 		"codes"
 	],
-	"dependencies": {
-		"strip-ansi": "^7.1.0"
-	},
 	"devDependencies": {
 		"ava": "^5.3.0",
 		"tsd": "^0.28.1",
