@@ -1,4 +1,5 @@
-import {stripVTControlCharacters} from 'node:util';
+// eslint-disable-next-line n/prefer-global/process
+const {stripVTControlCharacters} = globalThis.process?.getBuiltinModule?.('node:util') ?? {};
 
 const segmenter = new Intl.Segmenter();
 
@@ -7,7 +8,7 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 		return 0;
 	}
 
-	if (!countAnsiEscapeCodes) {
+	if (!countAnsiEscapeCodes && stripVTControlCharacters) {
 		string = stripVTControlCharacters(string);
 
 		if (string === '') {
@@ -17,7 +18,7 @@ export default function stringLength(string, {countAnsiEscapeCodes = false} = {}
 
 	let length = 0;
 
-	for (const _ of segmenter.segment(string)) { // eslint-disable-line no-unused-vars
+	for (const _ of segmenter.segment(string)) {
 		length++;
 	}
 
